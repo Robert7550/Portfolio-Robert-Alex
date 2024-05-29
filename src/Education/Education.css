@@ -1,0 +1,90 @@
+/* Education.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .education {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: translateZ(50px);
+  }
+  
+  .education-item {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    transform: translateZ(30px);
+  }
+  
+  .education-item:hover {
+    transform: translateZ(50px);
+    box-shadow: 0 20px 20px 20px rgba(0, 1, 0, 0.1);
+  }
+  
+  .education-content {
+    transform-style: preserve-3d;
+  }
+  
+  .degree {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transform: translateZ(20px);
+  }
+  
+  .institution,
+  .year {
+    font-size: 1rem;
+    color: #666;
+    transform: translateZ(10px);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .degree {
+      font-size: 1.25rem;
+    }
+  
+    .institution,
+    .year {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .degree {
+      font-size: 1rem;
+    }
+  
+    .institution,
+    .year {
+      font-size: 0.8rem;
+    }
+  }
+  

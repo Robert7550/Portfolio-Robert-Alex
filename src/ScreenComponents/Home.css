@@ -1,0 +1,102 @@
+/* Hero.css */
+
+body {
+    margin: 0;
+  }
+  
+  .hero {
+    margin-top: -5rem;
+    margin-left: -20rem;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+  }
+  
+  .container {
+    text-align: center;
+    color: rgb(1, 1, 1);
+    transform: rotateY(0deg) rotateX(0deg);
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+  }
+  
+  .content {
+    /* margin-left: -2rem; */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+
+  .img-section{
+    /* margin-left: -20rem; */
+
+  }
+  
+  .img-section img{
+    width: 250%;
+    height: 500px;
+    margin-left: -20rem;
+  }
+
+
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .content{
+      margin: 0 auto;
+    }
+
+    .hero{
+      flex-direction: column;
+      margin-left: 0;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      margin-top: 10rem;
+    }
+  
+    .subtitle {
+      font-size: 1.25rem;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+
+    .hero{
+      flex-direction: column;
+      margin-left: 0;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+    .img-section img{
+      margin-top: -15rem;
+      margin: 0;
+      width: 100%;
+    }
+
+  }
+  
