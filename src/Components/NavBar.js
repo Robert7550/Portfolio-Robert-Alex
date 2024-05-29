@@ -12,7 +12,7 @@ const NavBar = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <h1>RA</h1>
+          <h1><a href='/'>RA</a></h1>
         </div>
         <nav className={`nav ${isNavOpen ? 'active' : ''}`}>
           <ul>

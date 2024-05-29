@@ -17,7 +17,7 @@ const About = () => {
 
         </div>
         <div className="image-content">
-          <img src="https://img.freepik.com/free-vector/online-games-addiction-concept-illustration_114360-1994.jpg?t=st=1716960330~exp=1716963930~hmac=125917ab5361e3aad8634912c005d0556dcf8c53f189d4dd64740dcd309dc067&w=740" alt="About Me" className="about-image" />
+          <img src="Images/robert.jpg" alt="About Me" className="about-image" />
         </div>
       </div>
     </section>
