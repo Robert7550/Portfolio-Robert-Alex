@@ -1,11 +1,12 @@
 /* Header.css */
+
 *{
-  font-family:cursive;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body {
     margin: 0;
-    font-family: cursive;
+    font-family:'Times New Roman';
   }
   
   .header {
