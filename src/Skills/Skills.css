@@ -1,11 +1,11 @@
-/* Education.css */
+/* Skills.css */
 
 body {
     margin: 0;
-    font-family: cursive;
+    font-family: 'Arial', sans-serif;
   }
   
-  .education {
+  .skills {
     background-color: #f4f4f4;
     padding: 50px 20px;
     text-align: center;
@@ -25,33 +25,49 @@ body {
     transform: translateZ(50px);
   }
   
-  .education-item {
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill-card {
     background-color: white;
-    margin: 20px 0;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     transform: translateZ(30px);
+    width: 250px;
   }
   
-  .education-item:hover {
+  .skill-card:hover {
     transform: translateZ(50px);
-    box-shadow: 0 20px 20px 20px rgba(0, 1, 0, 0.1);
+    /* background-color: rgb(64, 254, 64); */
+    box-shadow: 0px 0px 20px 0px ;
   }
+
   
-  .education-content {
+  .skill-content {
     transform-style: preserve-3d;
+    text-align: center;
   }
   
-  .degree {
+  .skill-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    transform: translateZ(20px);
+  }
+  
+  .skill-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
     transform: translateZ(20px);
   }
   
-  .institution,
-  .year {
+  .skill-description {
     font-size: 1rem;
     color: #666;
     transform: translateZ(10px);
@@ -63,29 +79,45 @@ body {
       font-size: 2.5rem;
     }
   
-    .degree {
+    .skill-title {
       font-size: 1.25rem;
     }
   
-    .institution,
-    .year {
+    .skill-description {
       font-size: 0.9rem;
+    }
+  
+    .skill-image {
+      width: 80px;
+      height: 80px;
     }
   }
   
   @media (max-width: 768px) {
     .title {
       font-size: 2rem;
-      margin-top: -2rem;
     }
   
-    .degree {
+    .skill-title {
       font-size: 1rem;
     }
   
-    .institution,
-    .year {
+    .skill-description {
       font-size: 0.8rem;
+    }
+  
+    .skills-grid {
+      gap: 15px;
+    }
+  
+    .skill-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .skill-image {
+      width: 60px;
+      height: 60px;
     }
   }
   

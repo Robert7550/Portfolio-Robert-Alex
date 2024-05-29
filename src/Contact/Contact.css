@@ -1,30 +1,30 @@
-/* About.css */
+/* Contact.css */
 
 body {
     margin: 0;
-    font-family: cursive;
-}
+    font-family: 'Arial', sans-serif;
+  }
   
-  .about {
+  .contact {
     background-color: #f4f4f4;
-    /* background-color: white; */
     padding: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     perspective: 1000px;
   }
   
   .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     max-width: 1200px;
     width: 100%;
     transform-style: preserve-3d;
-    flex-wrap: wrap;
   }
   
-  .text-content {
+  .contact-content {
     flex: 1;
     padding: 20px;
     transform: translateZ(50px);
@@ -40,9 +40,42 @@ body {
   .description {
     font-size: 1.25rem;
     line-height: 1.6;
+    margin-bottom: 20px;
   }
   
-  .image-content {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transform: translateZ(30px);
+  }
+  
+  .form-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transform: translateZ(30px);
+    transition: background-color 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-image-container {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -50,8 +83,8 @@ body {
     padding: 20px;
   }
   
-  .about-image {
-    width: 60%;
+  .contact-image {
+    width: 100%;
     max-width: 500px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -59,7 +92,7 @@ body {
     transition: transform 0.3s;
   }
   
-  .about-image:hover {
+  .contact-image:hover {
     transform: translateZ(50px);
   }
   
@@ -73,7 +106,16 @@ body {
       font-size: 1.1rem;
     }
   
-    .about-image {
+    .form-input,
+    .form-textarea {
+      font-size: 0.9rem;
+    }
+  
+    .form-button {
+      font-size: 0.9rem;
+    }
+  
+    .contact-image {
       max-width: 400px;
     }
   }
@@ -83,7 +125,12 @@ body {
       flex-direction: column;
       text-align: center;
     }
-  
+
+    /* .contact-content{
+        margin-top: rem;
+
+    }
+   */
     .title {
       font-size: 2rem;
     }
@@ -92,13 +139,17 @@ body {
       font-size: 1rem;
     }
   
-    .text-content{
-        margin-top: -1rem;
+    .form-input,
+    .form-textarea {
+      font-size: 0.8rem;
     }
-
-    .about-image {
+  
+    .form-button {
+      font-size: 0.8rem;
+    }
+  
+    .contact-image {
       max-width: 300px;
-      width: 100%;
     }
   }
   

@@ -7,6 +7,9 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Home from './ScreenComponents/Home'
 import About from './About/About';
 import Education from './Education/Education';
+import Skills from './Skills/Skills';
+import Contact from './Contact/Contact';
+import Project from './Projects/Project';
 
 
 
@@ -16,6 +19,9 @@ const router = createBrowserRouter(
       <Route path='/' index={true} element={<Home/>} />
       <Route path='/about'  element={<About/>} />
       <Route path='/education'  element={<Education/>} />
+      <Route path='/skills' element={<Skills/>} />
+      <Route path='/project' element={<Project/>} />
+      <Route path='/contact' element={<Contact/>} />
 
 
     </Route>

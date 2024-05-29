@@ -12,7 +12,7 @@ const Hero = () => {
       </div>
 
       <div className='img-section'>
-        <img src='https://img.freepik.com/free-vector/coding-concept-illustration_114360-1155.jpg?size=626&ext=jpg&ga=GA1.1.802376354.1716454865&semt=ais_user' alt='web developer' />
+        <img src='https://img.freepik.com/premium-photo/drawing-style-3d-cartoon-cute-boy-computer_630102-1040.jpg?w=740' alt='web developer' />
       </div>
     </section>
   );

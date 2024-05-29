@@ -1,11 +1,11 @@
-/* Education.css */
+/* Projects.css */
 
 body {
     margin: 0;
-    font-family: cursive;
+    font-family: 'Arial', sans-serif;
   }
   
-  .education {
+  .projects {
     background-color: #f4f4f4;
     padding: 50px 20px;
     text-align: center;
@@ -25,36 +25,66 @@ body {
     transform: translateZ(50px);
   }
   
-  .education-item {
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-card {
     background-color: white;
-    margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     transform: translateZ(30px);
+    width: 300px;
   }
   
-  .education-item:hover {
+  .project-card:hover {
     transform: translateZ(50px);
-    box-shadow: 0 20px 20px 20px rgba(0, 1, 0, 0.1);
   }
   
-  .education-content {
+  .project-content {
     transform-style: preserve-3d;
+    text-align: center;
   }
   
-  .degree {
+  .project-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transform: translateZ(20px);
+  }
+  
+  .project-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
     transform: translateZ(20px);
   }
   
-  .institution,
-  .year {
+  .project-description {
     font-size: 1rem;
     color: #666;
     transform: translateZ(10px);
+  }
+  
+  .project-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .project-icon {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .project-icon:hover {
+    color: #007bff;
   }
   
   /* Responsive styles */
@@ -63,29 +93,48 @@ body {
       font-size: 2.5rem;
     }
   
-    .degree {
+    .project-title {
       font-size: 1.25rem;
     }
   
-    .institution,
-    .year {
+    .project-description {
       font-size: 0.9rem;
+    }
+  
+    .project-card {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .project-icon {
+      font-size: 1.25rem;
     }
   }
   
   @media (max-width: 768px) {
     .title {
       font-size: 2rem;
-      margin-top: -2rem;
     }
   
-    .degree {
+    .project-title {
       font-size: 1rem;
     }
   
-    .institution,
-    .year {
+    .project-description {
       font-size: 0.8rem;
+    }
+  
+    .projects-grid {
+      gap: 15px;
+    }
+  
+    .project-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .project-icon {
+      font-size: 1rem;
     }
   }
   
