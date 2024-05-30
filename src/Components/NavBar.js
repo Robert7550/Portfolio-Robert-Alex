@@ -24,7 +24,7 @@ const NavBar = () => {
             <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
-        <button className="nav-toggle" onClick={toggleNav}>
+        <button  className="nav-toggle " onClick={toggleNav}>
           &#9776;
         </button>
       </div>
