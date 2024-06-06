@@ -3,10 +3,11 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    /* background-color: rgb(197, 254, 254); */
   }
   
   .projects {
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     padding: 50px 20px;
     text-align: center;
   }
@@ -33,7 +34,7 @@ body {
   }
   
   .project-card {
-    background-color: white;
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -83,10 +84,7 @@ body {
     transition: color 0.3s;
   }
   
-  .project-icon:hover {
-    color: #007bff;
-  }
-  
+   
   /* Responsive styles */
   @media (max-width: 1024px) {
     .title {

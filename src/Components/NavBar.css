@@ -14,8 +14,18 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: #f4f4f4;
+    box-shadow: 0 5px 50px rgb(191, 189, 189);
+    animation: inner 0.9s ease-in-out;
   }
   
+  @keyframes inner{
+    0%{
+      transform:translatey(-250%);
+    }
+  }
+
+
   .container {
     display: flex;
     justify-content: space-between;

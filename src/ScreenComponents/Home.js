@@ -8,6 +8,14 @@ const Hero = () => {
         <div className="content">
           <h1 className="title">Robert Alex</h1>
           <p className="subtitle"> I am a Web Developer</p>
+
+            <a href="https://github.com/Robert7550/">
+              <i class="fa-brands fa-github git"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/robertalexp4506/">
+              <i class="fa-brands fa-linkedin linkedin" ></i>
+            </a>
+            
         </div>
       </div>
 

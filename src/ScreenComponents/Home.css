@@ -38,6 +38,18 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
   }
+
+  .git{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 5rem;
+  }
+
+  .linkedin{
+    color: black;
+    font-size: 30px;
+    margin-left: 2rem;
+  }
   
   .subtitle {
     font-size: 1.5rem;
