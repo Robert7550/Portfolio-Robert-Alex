@@ -3,7 +3,7 @@ import './Home.css';
 
 const Hero = () => {
 
-  const PDF_FILE_URL = 'http://localhost:3000/resume/Robert Alex-Front end developer-Resume.pdf'
+  const PDF_FILE_URL = '/resume/Robert Alex-Front end developer-Resume.pdf'
   
   const downloadFileAtURL = (url) =>{
     const fileName = url.split('/').pop()
