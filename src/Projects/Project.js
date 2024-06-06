@@ -50,10 +50,10 @@ const Projects = () => {
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-icons">
-                  <a href={project.github} className="project-icon" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Robert7550/" className="project-icon" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github"></i>
                   </a>
-                  <a href={project.linkedin} className="project-icon" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/robertalexp4506/" className="project-icon" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </div>
