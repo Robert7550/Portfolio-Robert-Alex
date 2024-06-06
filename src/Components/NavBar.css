@@ -99,6 +99,7 @@ body {
       flex-direction: column;
       display: none;
       margin-top: -3rem;
+      margin-right: 2rem;
     }
   
     .nav.active ul {
