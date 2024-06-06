@@ -2,6 +2,20 @@ import React from 'react';
 import './Home.css';
 
 const Hero = () => {
+
+  const PDF_FILE_URL = 'http://localhost:3000/resume/Robert Alex-Front end developer-Resume.pdf'
+  
+  const downloadFileAtURL = (url) =>{
+    const fileName = url.split('/').pop()
+    const aTag = document.createElement('a');
+    aTag.href=url
+    aTag.setAttribute('download', fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove(); 
+  }
+
+
   return (
     <section className="hero">
       <div className="container">
@@ -15,6 +29,10 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/robertalexp4506/">
               <i class="fa-brands fa-linkedin linkedin" ></i>
             </a>
+
+            <br/>
+
+            <button onClick={()=>{downloadFileAtURL(PDF_FILE_URL)}}  type='button' className='resume-button' data-download="Robert Alex-Front end developer-Resume.pdf">Resume</button>
             
         </div>
       </div>
